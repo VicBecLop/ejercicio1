@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="es-mx"> <!--INDICA EL IDIOMA ES-MX ES PARA ESPAÑOL DE MEXICO--> 
+<head> <!--ENCABEZADO, CONTIENE PARAMETROS DE LA PAGINA QUE NO VE EL USUARIO, SALVO EL TITULO DE LA PAGINA-->
+    <meta charset="UTF-8"><!--ES RESPONSABLE DEL TIPO DE LENGUAJE, SUPLANTA AL CODIGO ASCCI POR EL UNICODE TRANSFORMTION FORMAT QUE PERMITE EMOJIS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--MANIPULA EL TAMAÑO DE LA PAGINA-->
+    <title>Ejercicio 1 | Victor BECERRIL</title><!--ES EL TITULO DE LA PAGINA ESTE SI LO VE EL USUARIO-->
+    <meta name="description" content="Breve resumen de la PAGINA">
+    <meta name="keywords" content="Palabras clave">
+    <!--CON ESTE METADATO DE ABAJO PODEMOS MODIFICAR LA SECCION DE ARTICLE CON CSS A ESTO SE LE LLAMA ESTILOS EXTERNOS.
+        NOTA, SI ES POSIBLE SIEMPRE TENER TODOS LOS ESTILOS EN ESTE FORMATO-->
+    <link rel="stylesheet" 
+          href="otroarchivo.css">
+<!--LA OPCION DE STYLE SIRVE PARA DAR FORMATO EN ESTE CASO A LA SECCION DE STYLE, ESTA OPCION SE LLAMA ESTILOS INTERNOS-->
+    <style> 
+        article{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+        <!--la diferencia entre ol y ul es que en la primera salen los elementos enumerados mientras que en la segunda solo salen viñetas-->
+         
+    <header> <!--a diferencia de head donde son los metadatos de la página, aqui es la información de la página donde el usuario si puede ver lo que aparece-->
+        <h1>Propiedades dentro de la página</h1>
+        <nav>
+            <p>la diferencia entre ol y ul es que en la primera salen los elementos enumerados mientras que en la segunda solo salen viñetas</p>
+            <span>ol "Order List" o "Lista ordenada"</span>
+            <span>ul "Unorder List" o "Lista desordenada"</span>
+            <span>dl Subindices</span>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Listas Ordenadas</h2>
+            <p><ol><!--sirven para enlistar elementos ordenados "order list"-->
+        <li>Primer elemento</li> <!--Elementos de la lista ordenada "list Item"-->
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol></p>
+        </section>
+        <section>
+            <h2>Listas desordenadas</h2>
+            <p><ul><!--lista desordenada "unorder list"-->
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+    </ul>
+    Contenido de la sección 2</p>
+        </section>
+        <section>
+            <h2>Subindices</h2>
+            <p>
+    <dl><!--VERIFICA BIEN EL SIGNIFICADO DE CADA UNO DE DL, DT y DD-->
+        <dt>Animal de la familia de los Caninos</dt>
+        <dd>Perro</dd><!--dt definition termino-->
+        <dt>Animal de la familia de los felinos</dt>
+        <dd>Gato</dd>
+    </dl>
+    <!--aGREGANDO STYLE PODEMOS MODFICAR EL COLOR EN LA OPCION DE ARTICLE, ESTA OPCION SE LLAMA ESTILO ON LINE-->
+    <article style="background-color: blueviolet;">
+    <h2>Titulo del articulo correspondiente a Article</h2>
+    <p>Contenido del articulo</p>
+    <footer>Autor: VB</footer>
+    </article>
+    <figure> <!--coloca una imagen -->
+        <img src="victor page.jpg" alt="descripción imagen">
+        <figcaption>nota al pie de la imagen</figcaption>
+    </figure>
+    <p>El presidente <mark> anuncio </mark> hoy que la situacion económica del pais mejorará en os proximos meses. La reunión fue realizada ayer <time>el 10 de marzo</time> y se esperan nuevos anuncios en cuanto a la <abbr tittle ="política económica"> <strong><em>política económica</em></strong></abb> El <b><i>ministro de economia</i></b> declaro: <q>Estamos trabajando para mejorar las condiciones economicas del pais</q></p>
+    <!--entidades de los caracteres, cada uno de ellos representa un simbolo como puede ser la @, la letra Ñ o loa r o c dentro de un circulo-->
+    <p>Derechos reservados &copy;2026</p><!--muestra en pantalla lo que esta dentro de "p" ejecutando los diversos caracteres especiales-->
+    &amp
+    &copy;
+    &ntilde;
+    &circledR;
+    &commat;
+    &awint;</p>
+        </section>
+    </main>
+    
+    <footer>
+         <p><small>Derechos &copy;2026</small></p><!--muestra en pantalla lo que esta dentro de "p" ejecutando los diversos caracteres especiales-->
+    </footer>
+</body>
+</html>
