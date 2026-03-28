@@ -1,6 +1,7 @@
 <!DOCTYPE html> <!--tipo de documento-->
 <html lang="es-mx"> <!--INDICA EL IDIOMA ES-MX ES PARA ESPAÑOL DE MEXICO--> 
 <head> <!--ENCABEZADO, CONTIENE PARAMETROS DE LA PAGINA QUE NO VE EL USUARIO, SALVO EL TITULO DE LA PAGINA-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <meta charset="UTF-8"><!--ES RESPONSABLE DEL TIPO DE LENGUAJE, SUPLANTA AL CODIGO ASCCI POR EL UNICODE TRANSFORMTION FORMAT QUE PERMITE EMOJIS-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--MANIPULA EL TAMAÑO DE LA PAGINA-->
     <title>Ejercicio 1 | Victor BECERRIL</title><!--ES EL TITULO DE LA PAGINA ESTE SI LO VE EL USUARIO-->
@@ -71,6 +72,76 @@
     </figure>
     <p>El presidente <mark> anuncio </mark> hoy que la situacion económica del pais mejorará en os proximos meses. La reunión fue realizada ayer <time>el 10 de marzo</time> y se esperan nuevos anuncios en cuanto a la <abbr tittle ="política económica"> <strong><em>política económica</em></strong></abb> El <b><i>ministro de economia</i></b> declaro: <q>Estamos trabajando para mejorar las condiciones economicas del pais</q></p>
     <!--entidades de los caracteres, cada uno de ellos representa un simbolo como puede ser la @, la letra Ñ o loa r o c dentro de un circulo-->
+    
+    <table><!--Creamos una tabla horizontal el comando thead sirve para el encabezado de la tabla y tbody para la información que va dentro de la tabla-->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Cruz</td>
+                <td>Hombre</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>Dulce</td>
+                <td>Perez</td>
+                <td>Mujer</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>Victor</td>
+                <td>Becerril</td>
+                <td>Hombre</td>
+                <td>44</td>
+            </tr>
+        </tbody>
+        <tfood>
+            <tr>
+                <td>total</td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+            </tr>
+        </tfood>
+    </table>
+    <!--Para escribir fomularios se acupan los siguientes etiquetas de formularios-->
+    <input type="button" value="Haz click"><br>
+    <input type="checkbox" checked><br>
+    <input type="color" value="#FF0000"><br>
+    <input type="date" value="2026-003-27"><br>
+    <input type="email" value="ejemplo@gmail.com"><br>
+    <input type="file"><br>
+    <input type="month" value="2026-03"><br>
+    <input type="number" value="10"><br>
+    <input type="password" value="contraseña"><br>
+    <input type="radio" value="Activo" checked><br>
+    <input type="radio" value="Inactivo" unchecked><br>
+    <input type="range" value="50"><br>
+    <input type="reset" value="Reiniciar"><br>
+    <input type="search" value="Buscar"><br>
+    <input type="submit" value="Enviar"><br>
+    <input type="tel" value="12 3456 7890"><br>
+    <input type="text" value="Ingresa tu nombre"><br>
+    <input type="time" value="14:22"><br>
+    <input type="url" value="https://www.mipagina.com"><br>
+    <input type="week" value="2026-w12"><br>
+    <!--las siguientes lineas son para poder tener opciones de menu desplegables-->
+    <label for="pais">Selecciona pais de origen</label> <!--crea el boton con la leyebnda para escoger el pais-->
+    <select id="pais" name = "pais"> <!--se asigna un "ID" para los codigos de  los paises, esto puede servir para precios u otros parametros-->
+        <option value="mx" selected>México</option> <!--con la leyenda select hacemos que este pais sea el que esta por default en la lista, el select puedes ponerlo en cualquier pais de la lista-->
+        <option value="col">Colombia</option>
+        <option value="cn">Canada</option>
+        <option value="arg">Argentina</option>
+        <option value="pr">Perú</option>
+        <option value="cl">Chile</option>
+    </select>
     <p>Derechos reservados &copy;2026</p><!--muestra en pantalla lo que esta dentro de "p" ejecutando los diversos caracteres especiales-->
     &amp
     &copy;
@@ -80,7 +151,6 @@
     &awint;</p>
         </section>
     </main>
-    
     <footer>
          <p><small>Derechos &copy;2026</small></p><!--muestra en pantalla lo que esta dentro de "p" ejecutando los diversos caracteres especiales-->
     </footer>
